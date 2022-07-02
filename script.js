@@ -1,4 +1,4 @@
-// show/hide nav menu
+// _show/hide nav menu
 const menu = document.querySelector(".nav__menu");
 const menuBtn = document.querySelector("#open-menu-btn");
 const closeBtn = document.querySelector("#close-menu-btn");
@@ -17,3 +17,11 @@ const closeNav = () => {
 };
 
 closeBtn.addEventListener("click", closeNav);
+
+// // _active page
+// const activePage = window.location.pathname;
+// const navLinks = document.querySelectorAll(".nav__menu a").forEach((link) => {
+//   if (link.href.includes(`${activePage}`)) {
+//     link.classList.add("active");
+//   }
+// });

@@ -23,20 +23,20 @@
   </head>
   <body>
     <!-- _navbar -->
-    <nav>
+    <nav id="home">
       <div class="container nav__container">
         <a href="#">
           <h4 class="nav__brand">Yummy<span>.</span></h4>
         </a>
         <ul class="nav__menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Chefs</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Drop Down</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="home" class="active">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="menu">Menu</a></li>
+          <li><a href="events">Events</a></li>
+          <li><a href="chefs">Chefs</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="drop-down">Drop Down</a></li>
+          <li><a href="contact">Contact</a></li>
         </ul>
         <a href="#" class="nav__btn"><p>Book a Table</p></a>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -44,6 +44,7 @@
       </div>
     </nav>
 
+    <!-- _header -->
     <header>
       <div class="container header__container">
         <div class="header__left">
@@ -53,7 +54,7 @@
             eveniet. Eum quas beatae cumque eum quaerat.
           </p>
           <div class="header__left__btn">
-            <a href="#" class="btn">Book a Table</a>
+            <a href="#" class="btn header__btn">Book a Table</a>
             <div class="btn-watch-video">
               <div>
                 <i class="uil uil-play-circle"></i>
@@ -68,6 +69,50 @@
         </div>
       </div>
     </header>
+
+    <!-- _about -->
+    <section class="about">
+      <h2>ABOUT US</h2>
+      <p class="about__title">LEARN MORE ABOUT US</p>
+      <div class="container about__container">
+        <div class="about__left">
+          <img src="/assets/hero.jpg" />
+          <div class="img__info">
+            <h3>Book a Table</h3>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div>
+        <div class="about__right">
+          <div class="about__detail">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul>
+              <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li>
+                Duis aute irure dolor in reprehenderit in voluptate velit.
+              </li>
+              <li>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate trideta
+                storacalaperda mastiro dolore eu fugiat nulla pariatur.
+              </li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="/assets/hero.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="/script.js"></script>
   </body>
 </html>
