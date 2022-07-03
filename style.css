@@ -11,7 +11,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.7;
-  color: grey;
+  color: #333;
   background-color: white;
 }
 
@@ -187,9 +187,6 @@ header img {
 }
 
 /* _about */
-.about {
-  height: 1583px;
-}
 
 .about h2 {
   font-size: 1rem;
@@ -205,7 +202,6 @@ header img {
 .about__container {
   display: grid;
   grid-template-columns: 60% 40%;
-  /* gap: 1rem; */
 }
 
 .about__left img {
@@ -233,7 +229,71 @@ header img {
 
 .img__info p {
   font-size: 1.7rem;
-  color: red;
+  color: #ce1212;
+  font-weight: 700;
+  margin-top: -0.5rem;
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.about__detail p:nth-child(1) {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.about__checklist {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  height: fit-content;
+  align-content: flex-start;
+}
+
+.about__checklist ul:nth-child(1) {
+  align-self: flex-start;
+  font-size: 1.4rem;
+  color: #ce1212;
+}
+
+.about__checklist ul:nth-child(2) li {
+  padding: 0.5rem 0 0 0.2rem;
+}
+
+.about__detail p:nth-child(3) {
+  margin-top: 1rem;
+}
+
+/* _cards */
+.cards {
+  background: #eee;
+}
+.card1 {
+  width: 25rem;
+  height: 25rem;
+  background: #ce1212;
+  padding: 2rem;
+}
+
+.card1 h3 {
+  color: white;
+  font-size: 2.2rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.card1 p {
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.card1 a {
+  background: #dd5a5a;
 }
 
 /* _Responsive Breakpoints */
