@@ -18,10 +18,12 @@ const closeNav = () => {
 
 closeBtn.addEventListener("click", closeNav);
 
-// // _active page
-// const activePage = window.location.pathname;
-// const navLinks = document.querySelectorAll(".nav__menu a").forEach((link) => {
-//   if (link.href.includes(`${activePage}`)) {
-//     link.classList.add("active");
-//   }
-// });
+// _show/hide menu item
+const menuList = document.querySelectorAll(".menu-list");
+const yummyBtn = document.querySelector("our-menu__navbar a");
+
+menuList.forEach((yummyBtn) => {
+  yummyBtn.addEventListener("click", () => {
+    menuList.classList.toggle("open");
+  });
+});

@@ -7,7 +7,7 @@
     <title>Responsive Yummy</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Google Font - Montserrat -->
+    <!-- Google Font - Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +15,28 @@
       rel="stylesheet"
     />
 
+    <!-- boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <!-- iconscout cdn -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/37aba9b34f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -29,20 +47,21 @@
           <h4 class="nav__brand">Yummy<span>.</span></h4>
         </a>
         <ul class="nav__menu">
-          <li><a href="home" class="active">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="menu">Menu</a></li>
-          <li><a href="events">Events</a></li>
-          <li><a href="chefs">Chefs</a></li>
-          <li><a href="gallery">Gallery</a></li>
-          <li><a href="drop-down">Drop Down</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Chefs</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Drop Down</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
         <a href="#" class="nav__btn"><p>Book a Table</p></a>
         <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
         <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
       </div>
     </nav>
+    <!-- end of navbar -->
 
     <!-- _header -->
     <header>
@@ -57,7 +76,7 @@
             <a href="#" class="btn header__btn">Book a Table</a>
             <div class="btn-watch-video">
               <div>
-                <i class="uil uil-play-circle"></i>
+                <i class="bx bx-play-circle"></i>
               </div>
               <p>Watch Video</p>
             </div>
@@ -69,14 +88,15 @@
         </div>
       </div>
     </header>
+    <!-- end of header -->
 
     <!-- _about -->
     <section class="about">
-      <h2>ABOUT US</h2>
-      <p class="about__more">LEARN MORE <span>ABOUT US</span></p>
+      <h2>about us</h2>
+      <p>learn more <span>about us</span></p>
       <div class="container about__container">
         <div class="about__left">
-          <img src="/assets/hero.jpg" />
+          <img src="/assets/table2.jpg" />
           <div class="img__info">
             <h3>Book a Table</h3>
             <p>+1 5589 55488 55</p>
@@ -123,6 +143,7 @@
         </div>
       </div>
     </section>
+    <!-- end of about -->
 
     <!-- _cards -->
     <section class="why-cards">
@@ -168,6 +189,7 @@
         </div>
       </div>
     </section>
+    <!-- end of cards -->
 
     <!-- _stats -->
     <section class="stats">
@@ -193,71 +215,442 @@
         </div>
       </div>
     </section>
+    <!-- end of stats -->
 
     <!-- _our-menu -->
     <section class="our-menu">
-      <div class="container">
-        <h2 class="our-menu__title">OUR MENU</h2>
-        <p class="our-menu__more">CHECK OUR <span>YUMMY MENU</span></p>
+      <div class="container our-menu__container">
+        <h2>OUR MENU</h2>
+        <p>CHECK OUR <span>YUMMY MENU</span></p>
 
-        <div class="our-menu__navbar">
-          <a href=""><h4>Starters</h4></a>
-          <a href=""><h4>Breakfast</h4></a>
-          <a href=""><h4>Lunch</h4></a>
-          <a href=""><h4>Dinner</h4></a>
+        <div class="our-menu__navbar menu-list">
+          <a class="active"><h4>Starters</h4></a>
+          <a><h4>Breakfast</h4></a>
+          <a><h4>Lunch</h4></a>
+          <a><h4>Dinner</h4></a>
         </div>
 
-        <div class="our-menu__header">
-          <p>MENU</p>
-          <h4>Starters</h4>
+        <!-- #starters -->
+
+        <article>
+          <div class="our-menu__header">
+            <p>MENU</p>
+            <h4>Starters</h4>
+          </div>
+
+          <div class="menu-item__container">
+            <div class="menu-item">
+              <img src="/assets/menu-item-1.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-2.png" />
+              <h4>Starters</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-3.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-4.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-5.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-6.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- #breakfast -->
+
+        <article>
+          <div class="our-menu__header menu-list">
+            <p>MENU</p>
+            <h4>Breakfast</h4>
+          </div>
+
+          <div class="menu-item__container menu-list">
+            <div class="menu-item">
+              <img src="/assets/menu-item-1.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-2.png" />
+              <h4>Breakfast</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-3.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-4.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-5.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-6.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- #lunch -->
+
+        <article>
+          <div class="our-menu__header menu-list">
+            <p>MENU</p>
+            <h4>Lunch</h4>
+          </div>
+
+          <div class="menu-item__container menu-list">
+            <div class="menu-item">
+              <img src="/assets/menu-item-1.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-2.png" />
+              <h4>Lunch</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-3.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-4.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-5.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-6.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- #dinner -->
+
+        <article>
+          <div class="our-menu__header menu-list">
+            <p>MENU</p>
+            <h4>Dinner</h4>
+          </div>
+
+          <div class="menu-item__container menu-list">
+            <div class="menu-item">
+              <img src="/assets/menu-item-1.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-2.png" />
+              <h4>Dinner</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-3.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-4.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-5.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="/assets/menu-item-6.png" />
+              <h4>Magnam Tiste</h4>
+              <p>Lorem, deren, trataro, filede, nerada</p>
+              <p>$5.95</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- end of our-menu -->
+
+    <!-- _testimonials -->
+    <section class="container testimonials mySwiper">
+      <h2>testimonials</h2>
+      <p>what are they <span>saying about us</span></p>
+      <div class="testimonials__container swiper-wrapper">
+        <div class="testimonial swiper-slide">
+          <div class="testimonial__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+              praesentium. Quidem quibusdam maiores ut accusamus aliquam
+              voluptate recusandae, sit cupiditate?
+            </p>
+            <h3>Saul Goodman</h3>
+            <h4>CEO and Founder</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="testimonial__avatar">
+            <img src="/assets/testimonials-1.jpg" />
+          </div>
         </div>
 
-        <div class="menu-item__container">
-          <div class="menu-item">
-            <img src="/assets/hero-img.png" />
-            <h4>Magnam Tiste</h4>
-            <p>Lorem, deren, trataro, filede, nerada</p>
-            <p>$5.95</p>
+        <div class="testimonial swiper-slide">
+          <div class="testimonial__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+              praesentium. Quidem quibusdam maiores ut accusamus aliquam
+              voluptate recusandae, sit cupiditate?
+            </p>
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="testimonial__avatar">
+            <img src="/assets/testimonials-2.jpg" />
+          </div>
+        </div>
+
+        <div class="testimonial swiper-slide">
+          <div class="testimonial__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+              praesentium. Quidem quibusdam maiores ut accusamus aliquam
+              voluptate recusandae, sit cupiditate?
+            </p>
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="testimonial__avatar">
+            <img src="/assets/testimonials-3.jpg" />
+          </div>
+        </div>
+
+        <div class="testimonial swiper-slide">
+          <div class="testimonial__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+              praesentium. Quidem quibusdam maiores ut accusamus aliquam
+              voluptate recusandae, sit cupiditate?
+            </p>
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="testimonial__avatar">
+            <img src="/assets/testimonials-4.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <!-- end of testimonials -->
+
+    <!-- _events -->
+    <section class="events">
+      <h2>Events</h2>
+      <p>share <span>your moments</span> in our restaurant</p>
+      <div class="testimonials__container">
+        <div class="container events__container">
+          <div class="event event1">
+            <h3>Private Parties</h3>
+            <p>$289</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              porro vero sed quisquam quasi voluptatum aliquam numquam dicta ex
+              facilis? Lorem ipsum dolor sit amet.
+            </p>
           </div>
 
-          <div class="menu-item">
-            <img src="/assets/hero-img.png" />
-            <h4>Magnam Tiste</h4>
-            <p>Lorem, deren, trataro, filede, nerada</p>
-            <p>$5.95</p>
+          <div class="event event2">
+            <h3>Custom Parties</h3>
+            <p>$499</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              porro vero sed quisquam quasi voluptatum aliquam numquam dicta ex
+              facilis? Lorem ipsum dolor sit amet.
+            </p>
           </div>
 
-          <div class="menu-item">
-            <img src="/assets/hero-img.png" />
-            <h4>Magnam Tiste</h4>
-            <p>Lorem, deren, trataro, filede, nerada</p>
-            <p>$5.95</p>
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/hero-img.png" />
-            <h4>Magnam Tiste</h4>
-            <p>Lorem, deren, trataro, filede, nerada</p>
-            <p>$5.95</p>
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/hero-img.png" />
-            <h4>Magnam Tiste</h4>
-            <p>Lorem, deren, trataro, filede, nerada</p>
-            <p>$5.95</p>
-          </div>
-
-          <div class="menu-item">
-            <img src="/assets/hero-img.png" />
-            <h4>Magnam Tiste</h4>
-            <p>Lorem, deren, trataro, filede, nerada</p>
-            <p>$5.95</p>
+          <div class="event event3">
+            <h3>Birthday Parties</h3>
+            <p>$99</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+              porro vero sed quisquam quasi voluptatum aliquam numquam dicta ex
+              facilis? Lorem ipsum dolor sit amet.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- end of events -->
+
+    <!-- _chefs -->
+    <section class="chefs">
+      <h2>chefs</h2>
+      <p>our <span>professional</span> chefs</p>
+      <div class="container chefs__container">
+        <div class="chef__card">
+          <img src="/assets/chef-1.jpg" alt="" />
+          <div class="chef__info">
+            <h4>Walter White</h4>
+            <span>Master Chef</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              praesentium deserunt minima quam autem mollitia?
+            </p>
+          </div>
+        </div>
+
+        <div class="chef__card">
+          <img src="/assets/chef-2.jpg" alt="" />
+          <div class="chef__info">
+            <h4>Daniel Jhonson</h4>
+            <span>Patissier</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              praesentium deserunt minima quam autem mollitia?
+            </p>
+          </div>
+        </div>
+
+        <div class="chef__card">
+          <img src="/assets/chef-3.jpg" alt="" />
+          <div class="chef__info">
+            <h4>William Anderson</h4>
+            <span>Cook</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              praesentium deserunt minima quam autem mollitia?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of chefs -->
+
+    <!-- _booking -->
+    <section class="booking">
+      <h2>book a table</h2>
+      <p>book <span>your stay</span> with us</p>
+      <div class="container boooking__container"></div>
+    </section>
     <script src="/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- initialize swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
