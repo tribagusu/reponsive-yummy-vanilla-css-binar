@@ -631,8 +631,33 @@
     <section class="booking">
       <h2>book a table</h2>
       <p>book <span>your stay</span> with us</p>
-      <div class="container boooking__container"></div>
+      <div class="container booking__container">
+        <div class="booking__left">
+          <img src="/assets/reservation.jpg" alt="" />
+        </div>
+        <div class="booking__form">
+          <form action="">
+            <input type="text" id="name" placeholder="Your Name" />
+            <input type="text" id="email" placeholder="Your Email" />
+            <input type="text" id="phone" placeholder="Your Phone" />
+            <input type="text" id="date" placeholder="Date" />
+            <input type="text" id="time" placeholder="Time" />
+            <input type="text" id="people" placeholder="#of people" />
+          </form>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" id="submit" class="btn booking__btn">
+            <p>Book a Table</p>
+          </button>
+        </div>
+      </div>
     </section>
+
     <script src="/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
