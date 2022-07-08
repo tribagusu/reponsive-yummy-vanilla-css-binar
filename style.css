@@ -228,11 +228,10 @@ header h1 {
 .about__container {
   display: grid;
   grid-template-columns: 60% 40%;
-  min-width: 1300px;
 }
 
 .about__left img {
-  width: 95%;
+  width: 724px;
 }
 
 .about__left {
@@ -242,9 +241,10 @@ header h1 {
 .about__left .img__info {
   background: white;
   position: absolute;
-  bottom: 20%;
-  left: 13%;
-  width: 70%;
+  bottom: 10%;
+  left: 10%;
+  width: 550px;
+  height: 150px;
   text-align: center;
   padding: 2rem 2rem;
 }
@@ -300,7 +300,6 @@ header h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-width: 1300px;
 }
 
 .cards {
@@ -825,7 +824,6 @@ article .menu-list {
 .booking__left {
   width: 100%;
   height: 100%;
-  background: red;
 }
 
 .booking__bg {
@@ -847,20 +845,20 @@ article .menu-list {
   gap: 1rem;
 }
 
-form {
+.booking__form form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-form > * {
+.booking__form form > * {
   width: 260px;
   height: 50px;
   padding: 0.5rem 1rem;
   border: 1px solid #ddd;
 }
 
-textarea {
+.booking__form textarea {
   width: 100%;
   min-height: 150px;
   padding: 1rem;
@@ -880,7 +878,7 @@ textarea {
 
 /* _gallery */
 .galleries {
-  height: 600px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -947,7 +945,6 @@ textarea {
 }
 
 .contact__detail {
-  width: var(--width-lg);
   height: 280px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -962,6 +959,7 @@ textarea {
   background: #f4f4f4;
   padding: 2rem;
   gap: 1rem;
+  align-items: center;
 }
 
 .contact__icon {
@@ -985,17 +983,32 @@ textarea {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.02);
+}
+
+.contact__form textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  resize: vertical;
+  overflow: scroll;
 }
 
 .contact__form input:nth-child(1),
 .contact__form input:nth-child(2) {
-  width: 610px;
+  min-width: 610px;
+  height: 50px;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
 }
 
 .contact__form input:nth-child(3) {
   width: 100%;
+  height: 50px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
 }
 
 .contact__form textarea {
@@ -1003,15 +1016,96 @@ textarea {
   resize: vertical;
 }
 
-form .contact__btn {
-  margin: 0 auto;
-  padding: 0;
+.contact__form button {
+  margin: 1rem auto 0;
+  padding: 0.7rem 2rem;
   cursor: pointer;
 }
 
-form .contact__btn span {
+.contact__form button p {
   font-size: 1.1rem;
+}
+
+/* _footer */
+footer {
+  background: #1f1f24;
+  color: white;
+  padding: 3rem 0;
+  min-height: 350px;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+  min-height: 150px;
+}
+
+.footer__item {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo i {
+  align-self: flex-start;
+  font-size: 1.6rem;
   line-height: 0;
+}
+
+.footer__info h4 {
+  margin-bottom: 0.5rem;
+}
+
+.footer__info p {
+  font-size: 0.9rem;
+  color: #b6b6bf;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.footer__social__links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__social__links a {
+  display: flex;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: #b6b6bf;
+}
+
+.footer__social__links a i {
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.footer__copyright p {
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: #b6b6bf;
+}
+
+.footer__copyright p a {
+  color: #b6b6bf;
 }
 
 /* _Responsive Breakpoints */
@@ -1130,7 +1224,7 @@ form .contact__btn span {
   .about__container {
     display: flex;
     flex-direction: column;
-    min-width: 800px;
+    /* min-width: 800px; */
     justify-content: center;
     align-items: center;
   }
@@ -1139,7 +1233,7 @@ form .contact__btn span {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 800px;
+    /* min-width: 800px; */
   }
 
   .about__left .img__info {
@@ -1151,7 +1245,7 @@ form .contact__btn span {
     justify-content: center;
     align-content: center;
     padding: 2rem 1rem 0;
-    width: 800px;
+    /* width: 800px; */
   }
 
   .about__detail {
@@ -1163,7 +1257,6 @@ form .contact__btn span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 800px;
   }
 
   .card1 {
@@ -1227,31 +1320,62 @@ form .contact__btn span {
 
   .booking__container {
     flex-direction: column;
-    min-height: 980px;
+    min-height: 1000px;
     width: 700px;
   }
 
   .booking__left {
     width: 700px;
-    height: 500px;
+    height: 570px;
   }
 
-  .booking__left img {
-    object-fit: cover;
+  .booking__form form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .booking__form input {
+    width: 310px;
+  }
+
+  /* -contact */
+  .contact__container {
+    min-width: 700px;
+  }
+  .contact__map {
+    display: flex;
+  }
+
+  .contact__map iframe {
+    margin: 0 auto;
+    min-width: 700px;
+  }
+
+  .contact__detail {
+    max-width: 770px;
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .contact__info {
+    padding: 1rem;
+  }
+
+  .contact__item {
+    font-size: 0.9rem;
+  }
+
+  .contact__form input {
     width: 100%;
-    height: 500px;
   }
 
-  .booking__form {
-    padding: 2rem 2.5rem;
+  /* -footer */
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
-  form {
-    justify-content: space-between;
-    gap: 0.5rem;
-  }
-
-  form > * {
-    width: 300px;
+  .footer__item {
+    margin: 0 0 2.5rem;
   }
 }
